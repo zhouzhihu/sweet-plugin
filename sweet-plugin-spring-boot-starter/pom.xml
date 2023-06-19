@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>sweet-plugin-parent</artifactId>
+        <groupId>com.egrand.sweetplugin</groupId>
+        <version>1.2.1-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>sweet-plugin-spring-boot-starter</artifactId>
+    <packaging>jar</packaging>
+    <name>sweet-plugin-spring-boot-starter</name>
+    <description>sweet plugin springboot starter</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.egrand.sweetplugin</groupId>
+            <artifactId>sweet-plugin</artifactId>
+            <version>1.2.1-SNAPSHOT</version>
+        </dependency>
+        <!-- 插件运行时依赖（后续会替换掉） -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-context</artifactId>
+            <version>2.2.4.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
